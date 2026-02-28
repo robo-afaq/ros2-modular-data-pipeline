@@ -1,3 +1,9 @@
+**Project Overview**
+
+This project is a hands-on exploration of building a clean, modular, and reproducible data-processing pipeline using ROS 2 (Humble). Instead of focusing on a full navigation stack immediately, the goal here is to deeply understand how data flows through a robotic system — from sensing to processing to logging and analysis.
+
+The repository demonstrates how to design ROS 2 nodes properly, configure them with parameters, orchestrate them using launch files, record experiments with rosbag2, and generate structured datasets for offline evaluation. It is intentionally simple in functionality but strong in architecture — reflecting how real robotics systems are built step by step.
+
 **ROS 2 Modular Data Pipeline**
 
 A modular ROS 2 (Humble) data-processing framework demonstrating:
