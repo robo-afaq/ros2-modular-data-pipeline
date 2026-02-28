@@ -1,0 +1,10 @@
+build/
+install/
+log/
+*.pyc
+__pycache__/
+*.csv
+*.db3
+venvs/
+ros2_logs/
+bags/
