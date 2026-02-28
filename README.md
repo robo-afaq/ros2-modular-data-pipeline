@@ -1,4 +1,4 @@
-ROS 2 Modular Data Pipeline
+**ROS 2 Modular Data Pipeline**
 
 A modular ROS 2 (Humble) data-processing framework demonstrating:
 
@@ -18,7 +18,7 @@ A modular ROS 2 (Humble) data-processing framework demonstrating:
 
 - Post-processing and plotting pipeline
 
-Architecture
+**Architecture**
 
 sensor_publisher
         ↓
@@ -32,7 +32,7 @@ processor_node
         ↓
  Plotting Script
 
-Features
+**Features**
 
 - Modular ROS 2 node design
 
@@ -46,31 +46,37 @@ Features
 
 - Statistical analysis & visualization
 
-Installation
+**Installation**
 
 cd ~/ros2_ws/src
+
 git clone https://github.com/YOUR_USERNAME/ros2-modular-data-pipeline.git
+
 cd ~/ros2_ws
+
 colcon build
+
 source install/setup.bash
 
-Run
+**Run**
+
+Launch the file with the following command:
 
 ros2 launch ros2_modular_data_pipeline pipeline.launch.py
 
 
-Manual Run:
+**Manual Run:**
 
 ros2 run ros2_modular_data_pipeline sensor_publisher
+
 ros2 run ros2_modular_data_pipeline processor_node --ros-args -p scale_factor:=3.0
 
-Logging
+**Logging**
 
 Logs are saved automatically to: ~/ros2_logs/
 
+**Plotting**
 
-Plotting
+Plot the CSV logged data using the following command:
 
 python3 plot_csv.py <path_to_csv>
-
-Example Output
